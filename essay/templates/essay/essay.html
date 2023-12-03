@@ -1,0 +1,75 @@
+{% extends 'shared/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<body class="gallery-page">
+
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+
+                <div class="main-page">
+                    {% include 'shared/navbar.html' %}
+
+                    <!-- content-main -->
+                    <div class="content-main gallery_main " style="	border-top: 5px solid goldenrod;
+">
+
+                        <div class="gallery-main-inner">
+
+                            <div class="col-md-12 gallery_title_main">
+                                <div class="gallery_design ">
+                                    <h3 style="color: goldenrod;border-right:4px solid   goldenrod;padding-right: 9px;line-height: 2">مقالات</h3>
+                                    <h4>اخرین ها</h4>
+                                </div><br style="clear:both;"/>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="box paris">
+                                    <div class="box-icon">
+                                        <img src="{% static 'images/home-img-2.jpg' %}" alt="Image" class="img-responsive">
+                                    </div>
+                                    <div class="info float-container">
+                                        <div class="col-sm-12 paris-title">
+                                            <h3 class="text-uppercase" ">مقالات</h3>
+                                        </div>
+                                        <p >تاریخ ثبت مقاله </p><hr />
+
+                                        <div class="col-sm-12 location-main">
+                                            <div class="pull-right location2">
+                                                <i class="fa fa-map-marker fa-2x"></i><span style="font-weight: bold">مکان </span>
+                                            </div>
+                                            <div class="pull-left user-icons">
+                                                <a href="#"><i class="fa fa-location-arrow fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-user fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <h4 class="text-uppercase" style="line-height: 2.5;color:goldenrod" >مشاهده سایر مقاله ها</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+{#                            <div class="row text-center view_more_main">#}
+{#                               <a href="#" class="btn view_more"  style="background-color:goldenrod">view more</a>#}
+{#                            </div>#}
+
+                        </div>
+
+                    </div>
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+
+
+        </div> <!-- .container -->
+    </div>  <!-- .main-body -->
+
+
+{% include "projects/project_scripts.html" %}
+
+</body>
+
+{% endblock %}

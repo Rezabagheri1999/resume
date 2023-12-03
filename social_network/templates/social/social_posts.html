@@ -1,0 +1,88 @@
+{% extends 'shared/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<body class="gallery-page">
+
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+
+                <div class="main-page">
+                    {% include 'shared/navbar.html' %}
+
+                    <!-- content-main -->
+                    <div class="content-main gallery_main ">
+
+                        <div class="gallery-main-inner">
+
+                            <div class="col-md-12 gallery_title_main">
+                                <div class="gallery_design">
+                                    <h3 style="color: #0C98B3;border-right:4px solid  #0C98B3;padding-right: 9px;line-height: 2">پستهای شبکه های اجتماعی</h3>
+                                    <h4>جدیدترین ها</h4>
+                                </div><br style="clear:both;"/>
+                            </div>
+{# here i should create a for loop#}
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="box london">
+                                    <div class="box-icon">
+                                        <img src="{% static 'images/home-img-3.jpg' %}" alt="Image" class="img-responsive">
+                                    </div>
+                                    <div class="info float-container">
+                                        <div class="col-sm-12 london-title london-title">
+                                            <h3 class="text-uppercase" >پست های شبکه های اجتماعی</h3>
+                                        </div>
+                                        <p>کپشن پست </p><hr />
+
+                                        <div class="col-sm-12 location-main">
+                                            <div class="pull-right location location1">
+                                                <i class="fa fa-map-marker fa-2x"></i><span>مکان پست</span>
+                                            </div>
+                                            <div class="pull-left user-icons">
+                                                <a href="#"><i class="fa fa-location-arrow fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-comment fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+{#        here i should determine which kind of social media i posted with                                        #}
+                                            </div>
+
+                                        </div>
+                                        <h4 class="text-uppercase" style="line-height: 2.5;color: #0C98B3" >مشاهده سایر پست ها</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+{##}
+{#                            <div class="row text-center view_more_main" style="display: block">#}
+{#                               <a href="#" class="btn view_more">دیدن بیشتر</a>#}
+{#                            </div>#}
+
+                        </div>
+
+                    </div>
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+
+        </div> <!-- .container -->
+    </div>  <!-- .main-body -->
+
+
+{% include "projects/project_scripts.html" %}
+
+</body>
+
+{% endblock %}
+
+
+
+{##}
+{#                          <div id="content" class="gallery-images-container">#}
+{#                                <div class="box-gutter"></div>#}
+{#                                <div class="box-sizer"></div>#}
+{#                                <div class="box">#}
+{#                                    <a href="{% static "images/gallery-item-3.jpg" %}"><img alt="Agra picture" src="{% static "images/gallery-item-1.jpg" %}"></a>#}
+{#                                </div>#}
+{##}
+{##}
+{#                            </div>#}

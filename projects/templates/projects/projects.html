@@ -1,0 +1,101 @@
+{% extends 'shared/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<body class="gallery-page">
+
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+
+                <div class="main-page">
+                    {% include 'shared/navbar.html' %}
+
+                    <!-- content-main -->
+                    <div class="content-main gallery_main ">
+
+                        <div class="gallery-main-inner">
+
+                            <div class="col-md-12 gallery_title_main">
+                                <div class="gallery_design">
+                                    <h3 style="color: #0C98B3;border-right:4px solid  #0C98B3;padding-right: 9px;line-height: 2">پروژه ها</h3>
+                                    <h4>دموی پروژه ها</h4>
+                                </div><br style="clear:both;"/>
+                            </div>
+
+           <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                    <div class="box  col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                                        <div class="info">
+                                            <div >
+                                                <h3 style="color: #0C98B3;border-right:4px solid  #0C98B3;padding-right: 9px;line-height: 2">نام پروژه</h3>
+                                            </div>
+{#                           here is the picture of the porject                 #}
+                                            <img src="{% static "images/about-img-5.png" %}" alt="Image" class="img-responsive">
+{#                                            <h4>mauris vitae erat</h4>#}
+{#    here i should create for loop for my personal information#}
+                                            <h4 style="display: block">توضیحات پروژه </h4>
+
+                                        </div> <!-- .info -->
+                                    </div>
+                            </div>
+
+                                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                    <div class="box  col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                                        <div class="info">
+                                            <div >
+                                                <h3 style="color: #0C98B3;border-right:4px solid  #0C98B3;padding-right: 9px;line-height: 2">نام پروژه</h3>
+                                            </div>
+{#                           here is the picture of the porject                 #}
+                                            <img src="{% static "images/about-img-5.png" %}" alt="Image" class="img-responsive">
+{#                                            <h4>mauris vitae erat</h4>#}
+{#    here i should create for loop for my personal information#}
+                                            <h4 style="display: block">توضیحات پروژه </h4>
+
+                                        </div> <!-- .info -->
+                                    </div>
+                            </div>
+
+
+                                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                    <div class="box  col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                                        <div class="info">
+                                            <div >
+                                                <h3 style="color: #0C98B3;border-right:4px solid  #0C98B3;padding-right: 9px;line-height: 2">نام پروژه</h3>
+                                            </div>
+{#                           here is the picture of the porject                 #}
+                                            <img src="{% static "images/about-img-5.png" %}" alt="Image" class="img-responsive">
+{#                                            <h4>mauris vitae erat</h4>#}
+{#    here i should create for loop for my personal information#}
+                                            <h4 style="display: block">توضیحات پروژه </h4>
+
+                                        </div> <!-- .info -->
+                                    </div>
+                            </div>
+
+                        </div>
+
+{#                            <div class="row text-center view_more_main">#}
+{#                               <a href="#" class="btn view_more">view more</a>#}
+{#                            </div>#}
+
+                        </div>
+
+                    </div>
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+
+
+        </div> <!-- .container -->
+    </div>  <!-- .main-body -->
+
+
+{% include "projects/project_scripts.html" %}
+
+</body>
+
+{% endblock %}

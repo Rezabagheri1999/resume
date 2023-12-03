@@ -1,0 +1,143 @@
+{% extends "shared/main.html" %}
+{% load static %}
+{
+{% block content %}
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="main-page">
+
+                    {% include 'shared/navbar.html' %}
+                    <div class="content-main">
+                        <div class="row margin-b-30">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="banner-main-home">
+                                    <div class="banner-main-home-text">
+                                        <div class="heading">
+                                            <h3 style="color: rgba(0,0,0,0.48)">خوش امدید</h3>
+{#                                            <p class="text-uppercase"> : معرفی  </p>#}
+                                        </div>
+                                        <div class="desc">
+                                            <p>رضا باقری هستم برنامه نویس بک اند بر بستر زبان برنامه نویسی پایتون و فریمورک محبوب جنگو ،برای اشنایی بیشتر با من و سایر توانایی های کدنویس ام ،میتوانید از لینک زیر استفاده کنید</p>
+                                            <button type="button" class="">بیشتر</button>
+                                        </div>
+                                    </div>
+                                    <img src="{% static 'images/IMG_۲۰۲۰۰۴۰۹_۰۹۳۸۰۴.jpg' %}" alt="Image" class="img-responsive" style="width: 40%;border-radius: 20px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-b-30">
+{#this is the form for latest essaies#}
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="box london">
+                                    <div class="box-icon">
+                                        <img src="{% static 'images/home-img-2.jpg' %}" alt="Image" class="img-responsive">
+                                    </div>
+                                    <div class="info float-container">
+                                        <div class="col-sm-12 london-title">
+                                            <h3 class="text-uppercase" ">مقالات</h3>
+                                        </div>
+                                        <p >تاریخ ثبت مقاله </p><hr />
+
+                                        <div class="col-sm-12 location-main">
+                                            <div class="pull-right location">
+                                                <i class="fa fa-map-marker fa-2x"></i><span>مکان </span>
+                                            </div>
+                                            <div class="pull-left user-icons">
+                                                <a href="#"><i class="fa fa-location-arrow fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-user fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <h4 class="text-uppercase" style="line-height: 2.5;color:dodgerblue" >مشاهده سایر مقاله ها</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+{# this is the form for latest posts                           #}
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="box paris">
+                                    <div class="box-icon">
+                                        <img src="{% static 'images/home-img-3.jpg' %}" alt="Image" class="img-responsive">
+                                    </div>
+                                    <div class="info float-container">
+                                        <div class="col-sm-12 london-title paris-title">
+                                            <h3 class="text-uppercase" >پست های شبکه های اجتماعی</h3>
+                                        </div>
+                                        <p>کپشن پست </p><hr />
+
+                                        <div class="col-sm-12 location-main">
+                                            <div class="pull-right location location2">
+                                                <i class="fa fa-map-marker fa-2x"></i><span>مکان پست</span>
+                                            </div>
+                                            <div class="pull-left user-icons">
+                                                <a href="#"><i class="fa fa-location-arrow fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-comment fa-2x"></i></a>
+                                                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+{#        here i should determine which kind of social media i posted with                                        #}
+                                            </div>
+
+                                        </div>
+                                        <h4 class="text-uppercase" style="line-height: 2.5;color: goldenrod" >مشاهده سایر پست ها</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- row -->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="box bottom-main">
+                                    <div class="info float-container">
+                                        <div class="col-sm-12 bottom-title">
+                                            <h3 class="text-uppercase" dir="rtl"> نمونه پروژه ها</h3>
+{#                                            <h4 class="text-uppercase">جدید ترین ها</h4>#}
+                                        </div>
+                                        <div class="row">
+
+{#      here is for the demo the last three project#}
+                                            <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="bottom-img">
+                                                    <img src="{% static 'images/home-img-4.jpg' %}" alt="Image">
+                                                    <p class="first">پروژه سوم</p>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="bottom-img">
+                                                    <img src="{% static 'images/home-img-5.jpg' %}" alt="Image">
+                                                    <p class="second">پروژه دوم</p>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="bottom-img">
+                                                    <img src="{% static 'images/home-img-6.jpg' %}" alt="Image">
+                                                    <p class="third">پروژه اول</p>
+                                                </div>
+                                            </div>
+                                        </div>
+{#       ==================================================            ==============#}
+                                        <p class="bottom-desc" dir="rtl">توضیحات کلی راحع یه پروژه ها </p><hr />
+                                        <div class="col-sm-12 location-main">
+                                            <div class="pull-right bottom-user">
+                                                <a href="#"><i class="fa fa-caret-right"></i><span>دیدن بیشتر</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- .content-main -->
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+
+        </div> <!-- .container -->
+    </div> <!-- .main-body -->
+
+{% endblock %}

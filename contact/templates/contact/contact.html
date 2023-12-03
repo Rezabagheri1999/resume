@@ -1,0 +1,110 @@
+{% extends "shared/main.html" %}
+{% load static %}
+
+{% block content %}
+
+        <div class="main-body">
+        <div class="container">
+            <div class="row">
+
+                <div class="main-page">
+                    {% include 'shared/navbar.html' %}
+                    <div class="content-main contact-content">
+                        <div class="contact-content-upper">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="gallery_title">
+                                        <h4>ارتباط با من</h4>
+{#                                        <h3>ارتباط با من</h3>#}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 contact_left">
+                                    <form class="form-horizontal" method="post" action="#">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="نام و نام خانوادگی" value="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="ایمیل" value="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="موضوع" value="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="4" name="message" placeholder="متن پیام"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input id="submit" name="submit" type="submit" value="ارسال" class="btn view_more btn-submit">
+                                        </div>
+
+                                    </form>
+                                </div> <!-- .contact-left -->
+
+                                <div class="col-sm-12 col-md-6 contact_right">
+
+                                    <div class="col-md-12 contact_title">
+                                        CONTACT
+                                    </div>
+
+                                    <div class="col-md-12 contact_sub_title">
+                                        بامن در تماس باشید
+                                    </div>
+
+                                    <div class="col-md-12 contact_text">
+                                        پیام های شما در سریع ترین زمان پاسخ داده خواهد شد.
+                                        <br>
+                                        لطفا با مشخص کردن دقیق موضوع ایمیل ما را در روند پاسخ دهی یاری دهید
+                                        <br>
+                                        همچنین میتوانید انتقادات و پیشنهادات خود را با موضوع "پیشنهاد" به من برسانید
+                                        <br>
+                                        جهت ارسال سفارش از بخش مربوطه اقدام کنید
+                                        <br>
+                                    </div>
+
+                                    <div class="col-md-12 contact_info">
+                                        <a href="mailto:info@company.com" class="contact-info-link">
+                                            <i class="fa fa-envelope contact-fa"></i>rezabagheriofficial@gmail.com
+                                        </a><br/>
+                                        <a href="+1234567890" class="contact-info-link">
+                                            <i class="fa fa-mobile contact-fa"></i>09186197417
+                                        </a><br/>
+                                        <a href="+0987654321" class="contact-info-link">
+                                            <i class="fa fa-phone fa-twitter"></i>  reza_bagheri.1999
+                                        </a><br/>
+                                    </div>
+
+
+
+                                </div> <!-- .contact_right -->
+
+                            </div> <!-- .row -->
+                        </div>
+{#i can use google map screen shot too#}
+{#                        <div class="row">#}
+{#                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">#}
+{#                                <div id="google-map"></div>#}
+{#                            </div>#}
+{#                        </div>#}
+                        <div class="col-md-12">
+                                        <span><i class="fa fa-rss social-icon rss_icon"></i></span>
+                                        <span><i class="fa fa-twitter social-icon twitter_icon"></i></span>
+                                        <span><i class="fa fa-facebook social-icon facebook_icon"></i></span>
+                                    </div>
+
+                    </div> <!-- .contact-content -->
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+
+
+
+        </div> <!-- .container -->
+    </div> <!-- .main-body -->
+
+{% endblock %}
